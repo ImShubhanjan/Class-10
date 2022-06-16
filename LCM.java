@@ -7,28 +7,24 @@ public class LCM {
         int n1 = sc.nextInt();
         System.out.println("Enter second number: ");
         int n2 = sc.nextInt();
+        System.out.println(n1 +" "+n2);
         findLCM(n1, n2);
     }
-    public static void findLCM(int n1, int n2) 
-    {
+
+    public static void findLCM(int n1, int n2) {
         int lcm = 0, ans = 0;
-        if(n1 > n2)
-        {
+        if (n1 > n2) {
             lcm = n1;
-        }
-        else
-        {
+        } else {
             lcm = n2;
         }
-        while(true) 
-        {
-            if(lcm%n1 == 0 && lcm%n2 ==0) 
-            {
+        while (true) {
+            if (lcm % n1 == 0 && lcm % n2 == 0) {
                 ans = lcm;
                 break;
             }
             lcm++;
         }
-        System.out.println("The LCM of " + n1 + " and " +n2+ " is " + ans);
+        System.out.println("The LCM of " + n1 + " and " + n2 + " is " + ans);
     }
 }

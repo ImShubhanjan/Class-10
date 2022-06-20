@@ -28,7 +28,8 @@ class Calculate //this is a seprate class where calculations are done.
 
 public class Main //this is a seprate class where values are passed.
 {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Marks in Physics: ");
         int Phy = sc.nextInt();
@@ -42,8 +43,8 @@ public class Main //this is a seprate class where values are passed.
         System.out.println("Chemistry: " + Chem);
         System.out.println("Biology: " + Bio);
 
-        Calculate obj = new Calculate();  //This way object is created 
-        obj.Grade(Phy, Chem, Bio);
-        
+        // Calculate obj = new Calculate();  //This way object is created 
+        // obj.Grade(Phy, Chem, Bio);
+        Calculate.Grade(Phy, Chem, Bio);
     }    
 }

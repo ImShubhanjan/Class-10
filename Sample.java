@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Operation
 {
-    static int a, b, sumab, diffab; //global varaible
+    static int a, b, sumab, diffab, c=6; //global variable
 
     public static void accept() 
     {
@@ -17,12 +17,16 @@ class Operation
     {
         sumab = a + b;
         diffab = a - b;
+        int c = 5;  //local variable
+        System.out.println(c);
     }
 
     public static void display() 
     {
         System.out.println("The Sum of a and b: " + sumab);
         System.out.println("The diff of a and b: " + diffab);
+        System.out.println(c);
+
     }
     public static void mango() 
     {
